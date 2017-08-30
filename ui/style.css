@@ -19,4 +19,9 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.tag{
+    font-weight: bold;
+    text-align: center;
+    font-family:sans-serif;
+    color:green
+}
