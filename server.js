@@ -20,6 +20,7 @@ var template_article = `
 <!DOCTYPE HTML>
 <head>
 <title>${title}</title>
+<link href="/ui/style.css" rel="stylesheet" />
 </head>
 <body>
 <div >
