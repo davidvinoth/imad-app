@@ -8,7 +8,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-var articles={
+var articles1={
  'article_one' :{
     title: 'article-one',
     content:`<pre>
@@ -43,9 +43,9 @@ ${content}
 </HTML>`;
 return template_article;
 }
-app.get('/:articles', function(req,res){
+app.get('/:articles1', function(req,res){
 var articles=req.params.articles;
-res.send(template(articles[articles]));
+res.send(template(articles[articles1]));
 });
 
 app.get('/articletwo', function(req,res){
