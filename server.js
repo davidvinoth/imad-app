@@ -28,7 +28,7 @@ var template_article = `
 ${content}
 </body>
 </HTML>`;
-return template;
+return template_article;
 }
 app.get('/articleone', function(req,res){
  res.send(template(article_one));
