@@ -8,10 +8,22 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-var article_one = {
+var articles={
+ article_one :{
     title: 'article-one',
     content:`<pre>
     This is the code for article 1</pre>`
+},
+article_two :{
+    title: 'article-two',
+    content:`<pre>
+    This is the code for article 2</pre>`
+},
+article_three :{
+    title: 'article-three',
+    content:`<pre>
+    This is the code for article 3</pre>`
+}
 };
 function template(data){
 var title = data.title;
