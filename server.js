@@ -8,7 +8,26 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
+var articles={
+    article-one:{
+ <HTML>
+<head>
+<title>articleone</title>
+ <link href="/ui/style.css" rel="stylesheet" />
+</head>
+<body>
+<div >
+<a href="/">home</a>
+</div>
+<div class="tag">
+<pre>
+    This is the code for article 1
+</pre>    
+</div>
+</body>
+</HTML>  
+    }
+}
 app.get('/articleone', function(req,res){
  res.sendFile(path.join(__dirname, 'ui', 'articleone.html'));
 });
