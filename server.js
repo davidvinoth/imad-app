@@ -43,8 +43,9 @@ ${content}
 </HTML>`;
 return template_article;
 }
-app.get('/articleone', function(req,res){
- res.send(template(article_one));
+app.get('/:articles', function(req,res){
+var articles=req.params.articles;
+res.send(template(articles[articles]));
 });
 
 app.get('/articletwo', function(req,res){
