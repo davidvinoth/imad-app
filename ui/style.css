@@ -23,5 +23,6 @@ body {
     font-weight: bold;
     text-align: center;
     font-family:sans-serif;
-    color:green
+    color:green;
+    font-size: 200%;
 }
